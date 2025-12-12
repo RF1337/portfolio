@@ -1,4 +1,3 @@
-import RollingText from "./RolingText";
 
 export default function HeroSection() {
   return (
@@ -9,7 +8,6 @@ export default function HeroSection() {
       <p className="text-2xl md:text-4xl max-w-3xl">
         Crafting seamless digital experiences with a blend of creativity and code.
       </p>
-          <RollingText />
     </section>
   );
 }

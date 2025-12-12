@@ -8,7 +8,7 @@ export default function WorkSection() {
 
   return (
     <section id="work" className="px-8">
-        <h1 className="text-7xl mb-4">Work</h1>
+        <h1 className="text-[100px]">Work</h1>
 <div className="projects">
     <div className="project-card slide-left overflow-hidden">
         <a href="https://booking.bycentrum.dk/" className="block overflow-hidden rounded-sm">

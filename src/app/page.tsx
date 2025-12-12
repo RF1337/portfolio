@@ -52,8 +52,7 @@ ScrollTrigger.scrollerProxy(document.body, {
       scrollTrigger: {
         trigger: "#tech-stack",
         start: "top 20%",          // when footer starts to become visible
-        endTrigger: "#footer",
-        end: "bottom 0%",
+        end: () => document.body.scrollHeight, // ends at bottom of page
         toggleActions: "play reverse play reverse",
       },
     });
@@ -64,12 +63,10 @@ ScrollTrigger.scrollerProxy(document.body, {
   return (
     <div>
       <ReactLenis root />
-      <Header />
       <HeroSection />
       <WorkSection />
       <AboutSection />
       <TechStack />
-      <Footer />
     </div>
   );
 }

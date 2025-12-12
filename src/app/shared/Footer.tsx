@@ -43,9 +43,11 @@ export default function Footer() {
                     Let's work <br />
                     <span className="font-extrabold text-blue-600 font-playfair italic">together</span>
                 </h2>
-                <button className="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors">
-                    Send me a message
-                </button>
+                <a href="mailto:rasmusferst@gmail.com">
+                    <button className="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors">
+                        Send me a message
+                    </button>
+                </a>
             </div>
 
 

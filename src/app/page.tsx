@@ -10,6 +10,7 @@ import Footer from "./shared/Footer";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import HeroSection from "./components/HeroSection";
+import TechStack from "./components/TechStack";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,11 +48,12 @@ ScrollTrigger.scrollerProxy(document.body, {
     gsap.to("body", {
       backgroundColor: "#ffffff",  // light mode
       color: "#121212",
-      duration: 0.5,
-      ease: "power2.out",
+      ease: "none",
       scrollTrigger: {
-        trigger: "#footer",
-        start: "top 80%",          // when footer starts to become visible
+        trigger: "#tech-stack",
+        start: "top 20%",          // when footer starts to become visible
+        endTrigger: "#footer",
+        end: "bottom 0%",
         toggleActions: "play reverse play reverse",
       },
     });
@@ -66,7 +68,7 @@ ScrollTrigger.scrollerProxy(document.body, {
       <HeroSection />
       <WorkSection />
       <AboutSection />
-      <div className="h-[50vh]"></div>
+      <TechStack />
       <Footer />
     </div>
   );

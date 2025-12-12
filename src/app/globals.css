@@ -8,13 +8,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-roboto: var(--font-roboto);
+  --font-playfair: var(--font-playfair);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #121212;
     --foreground: #ededed;
   }
 }
@@ -22,5 +22,100 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolonner */
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* 1 kolonne på mobil */
+  }
+}
+
+.tech-ticker {
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 3%, black 95%, transparent);
+}
+
+.tech-track {
+  white-space: nowrap;
+  display: inline-block;
+  will-change: transform;
+  pointer-events: none; /* hover goes to ticker container */
+}
+
+.tech-ticker:hover .tech-track {
+  pointer-events: auto;
+}
+
+.card {
+  position: relative;
+}
+
+.card-inner {
+  position: relative;
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  gap: 4em;
+}
+
+.card-content {
+  flex: 3;
+}
+
+.card-description{
+  max-width: 550px;
+}
+
+.card-img {
+  flex: 1;
+  aspect-ratio: 16/9;
+  border-radius: 0.75em;
+  overflow: hidden;
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  .card-img, .card-content p {
+    display: none;
+  }
+
+  .card {
+    height: 300px;
+  }
+}
+
+#card-1 .card-inner {
+  background-color: #8fd3f4;
+}
+
+#card-2 .card-inner {
+  background-color: #a1c4fd;
+}
+
+#card-3 .card-inner {
+  background-color: #84fab0;
+}
+
+#card-4 .card-inner {
+  background-color: #fccb90;
+}
+
+#highlight {
+  transition: opacity 0.25s ease-out;
 }

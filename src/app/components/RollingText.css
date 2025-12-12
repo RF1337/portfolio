@@ -1,0 +1,23 @@
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #262626;
+  color: white;
+  font-size: clamp(2rem, 9vw + 1rem, 12rem);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.rolling-text > div {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.cloneText {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

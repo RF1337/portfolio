@@ -54,6 +54,9 @@ body {
   pointer-events: auto;
 }
 
+.title {
+}
+
 .card {
   position: relative;
 }
@@ -87,10 +90,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    margin-bottom: 4rem;
-  }
-
   .card-img, .card-content p {
     display: none;
   }

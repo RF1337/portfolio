@@ -8,7 +8,7 @@ import WorkSection from "./components/WorkSection";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
+import SkillsSection from "./components/Skills/SkillsSection";
 import HeroSection from "./components/HeroSection";
 import TechStack from "./components/TechStack";
 
@@ -66,6 +66,7 @@ ScrollTrigger.scrollerProxy(document.body, {
       <HeroSection />
       <WorkSection />
       <AboutSection />
+      <SkillsSection />
       <TechStack />
     </div>
   );

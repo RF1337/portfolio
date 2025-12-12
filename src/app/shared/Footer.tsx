@@ -22,7 +22,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer id="footer" className="flex flex-col bg-[#151515] text-[#ffffff] my-8 rounded-2xl m-8 mt-24 h-[50vh] md:h-[94vh]">
+        <footer id="footer" className="flex flex-col bg-[#151515] text-[#ffffff] my-8 rounded-2xl m-8 mt-24 h-[60vh] md:h-[94vh]">
             {/* Desktop Layout */}
             <div className="hidden md:flex justify-between items-center p-8">
                 <p className="text-4xl flex-1 text-left font-extrabold">Ringsted, Denmark</p>

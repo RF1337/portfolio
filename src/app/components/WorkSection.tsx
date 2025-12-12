@@ -18,11 +18,11 @@ export default function WorkSection() {
 
         <div className="py-1 space-y-1">
             <div className="flex justify-between items-center">
-                <p className="font-semibold text-2xl">Vordingborg Bycentrum | Booth Reservation</p>
-                <p className="font-semibold text-2xl">2024</p>
+                <p className="font-semibold text-[clamp(16px,3vw,24px)]">Vordingborg Bycentrum | Booth Reservation</p>
+                <p className="font-semibold text-[clamp(16px,3vw,24px)]">2024</p>
             </div>
             <div className="tech-ticker mt-1 overflow-hidden">
-                <div className="tech-track text-[hsl(0,0%,50%)] inline-flex whitespace-nowrap">
+                <div className="text-[clamp(13px,3vw,21px)] tech-track text-[hsl(0,0%,50%)] inline-flex whitespace-nowrap">
                     <span className="inline-block">Angular | JSON |
                         Figma | UI | UX
                         |&nbsp;</span>
@@ -55,12 +55,12 @@ export default function WorkSection() {
 
         <div className="py-1 space-y-1">
             <div className="flex justify-between items-center">
-                <p className="font-semibold text-2xl">Fitness App | Macrolifter - Diet &
+                <p className="font-semibold text-[clamp(16px,3vw,24px)]">Fitness App | Macrolifter - Diet &
                     Gym</p>
-                <p className="font-semibold text-2xl">2025</p>
+                <p className="font-semibold text-[clamp(16px,3vw,24px)]">2025</p>
             </div>
             <div className="tech-ticker mt-1 overflow-hidden">
-                <div className="tech-track text-[hsl(0,0%,50%)] inline-flex whitespace-nowrap">
+                <div className="text-[clamp(13px,3vw,21px)] tech-track text-[hsl(0,0%,50%)] inline-flex whitespace-nowrap">
                     <span className="inline-block">React Native | Expo | Supabase |
                         RevenueCat | Figma | UI | UX
                         |&nbsp;</span>

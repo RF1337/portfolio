@@ -24,10 +24,11 @@ const MenuOverlay: FC<MenuOverlayProps> = ({ isOpen, toggleMenu }) => {
 
   return (
     <div className={`${styles.overlay} ${isOpen ? styles.open : ""}`}>
+
       {/* Overlay header */}
       <Header toggleMenu={toggleMenu} isMenuOpen={isOpen} />
 
-      <ul className="flex flex-col items-center">
+      <ul className="flex flex-row flex-wrap justify-start items-start p-8">
         <li>
           <a href="#" className="text-[96px] leading-none" onClick={(e) => handleClick(e)}>
             HOME
@@ -53,9 +54,9 @@ const MenuOverlay: FC<MenuOverlayProps> = ({ isOpen, toggleMenu }) => {
             TECH
           </a>
         </li>
-        <li className="mt-12 text-center">
-          <p>Email: rasmusferst@gmail.com</p>
-          <p>City: Ringsted, Denmark</p>
+        <li className="mt-auto">
+          <p>rasmusferst@gmail.com</p>
+          <p>Ringsted, Denmark</p>
         </li>
       </ul>
     </div>

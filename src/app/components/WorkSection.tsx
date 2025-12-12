@@ -55,9 +55,9 @@ export default function WorkSection() {
 
   return (
     <section id="work" className="px-8">
-      <h1 className="text-[clamp(32px,5vw,96px)] mb-8 leading-none">Work</h1>
+      <h1 className="text-[clamp(32px,5vw,96px)] md:mb-4 leading-tight">Work</h1>
 
-      <div className="projects flex flex-col gap-12">
+      <div className="projects flex flex-col md:gap-12">
         {projects.map((project, index) => (
           <div key={index} className="project-card overflow-hidden">
             <a href={project.link} className="block overflow-hidden rounded-sm">
@@ -71,7 +71,7 @@ export default function WorkSection() {
             </a>
 
             <div className="pt-2">
-              <div className="flex justify-between items-center mb-2">
+              <div className="flex justify-between items-center">
                 <p className="font-semibold text-[clamp(14px,3vw,24px)]">{project.title}</p>
                 <p className="font-semibold text-[clamp(14px,3vw,24px)]">{project.year}</p>
               </div>

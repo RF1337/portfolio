@@ -41,7 +41,7 @@ export default function WorkSection() {
       const width = track.scrollWidth / 2;
 
       
-        const pixelsPerSecond = 50; // adjust speed
+        const pixelsPerSecond = 25; // adjust speed
         const duration = width / pixelsPerSecond;
 
       gsap.to(track, {

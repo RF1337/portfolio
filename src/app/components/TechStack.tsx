@@ -95,11 +95,11 @@ export default function TechStack() {
             <img src="/assets/skills/figma.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-neutral-200 cursor-pointer relative">
+          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/csharp.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>
           
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-neutral-200 cursor-pointer relative">
+          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/github.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>
 

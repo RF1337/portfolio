@@ -1,4 +1,5 @@
 "use client";
+import AnimatedText from "./AnimatedText";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -39,7 +40,7 @@ export default function AboutSection() {
 
     return (
         <section id="about" className="mt-24 px-2 sm:px-4 md:px-8">
-            <h2 className="text-xl md:text-4xl font-bold mb-4">(About Rasmus)</h2>
+            <AnimatedText text="(About Rasmus)" className="text-xl md:text-4xl font-bold mb-4" type="lines" />
 
             <p
                 ref={textRef}

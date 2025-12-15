@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { ReactLenis } from "lenis/react";
+import AnimatedText from "../AnimatedText";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -22,8 +23,8 @@ const Card = ({ title, copy, index }: CardProps) => {
     <div className="card" id={`card-${index + 1}`}>
       <div className="card-inner">
         <div className="card-content">
-          <h1 className="text-[clamp(32px,5vw,80px)] font-bold">{title}</h1>
-          <p className="my-16 text-4xl font-playfair max-w-[550px]">{copy}</p>
+          <AnimatedText text={title} className="text-[clamp(32px,5vw,80px)] font-bold" type="lines"/>
+          <AnimatedText text={copy} className="my-16 text-4xl font-playfair max-w-[550px]" type="lines"/>
         </div>
         <div className="card-img">
           <img src={`/assets/card-${index + 1}.webp`} alt={title} />
@@ -104,14 +105,12 @@ export default function Home() {
   );
 
   return (
-    <ReactLenis root>
       <div id="skills" ref={container}>
         <section className="intro">
         </section>
 
-          <h1 className="title px-2 sm:px-4 md:px-8 mt-24 mb-8 text-[clamp(32px,5vw,96px)]">
-            Skills
-          </h1>
+          <AnimatedText text="Skills" className="title px-2 sm:px-4 md:px-8 mt-24 mb-8 text-[clamp(32px,5vw,96px)]" type="lines">
+          </AnimatedText>
         <section className="cards">
           {cards.map((card, index) => (
             <Card key={index} {...card} index={index} />
@@ -121,6 +120,5 @@ export default function Home() {
         <section className="outro">
         </section>
       </div>
-    </ReactLenis>
   );
 }

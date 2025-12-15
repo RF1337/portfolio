@@ -13,7 +13,7 @@ export default function TechStack() {
     const highlight = highlightRef.current;
     if (!grid || !highlight) return;
 
-    const tiles = grid.querySelectorAll(".tech-tile");
+    const tiles = grid.querySelectorAll<HTMLAnchorElement>(".tech-tile");
 
     tiles.forEach((tile) => {
       tile.addEventListener("mouseenter", () => {

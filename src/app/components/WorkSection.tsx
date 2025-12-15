@@ -1,4 +1,5 @@
 "use client";
+import SplitText from "./AnimatedText";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -55,7 +56,7 @@ export default function WorkSection() {
 
   return (
     <section id="work" className="px-2 sm:px-4 md:px-8">
-      <h1 className="text-[clamp(32px,5vw,96px)] md:mb-4 leading-tight">Work</h1>
+      <SplitText text="Work" className="text-[clamp(32px,5vw,96px)] md:mb-4 leading-tight" type="lines" />
 
       <div className="projects flex flex-col md:gap-12">
         {projects.map((project, index) => (

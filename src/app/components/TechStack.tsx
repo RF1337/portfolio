@@ -60,25 +60,25 @@ export default function TechStack() {
         />
 
         {/* ROW 1 */}
-        <div className="grid grid-cols:2 md:grid-cols-3">
-          <div className="tech-tile flex justify-center items-center p-8 border-b border-r border-neutral-200 cursor-pointer">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-r border-neutral-200 cursor-pointer">
             <img
               src="/assets/skills/react-native.svg"
               className="w-20 h-20 object-contain relative z-10"
             />
           </div>
 
-          <div className="tech-tile flex justify-center items-center p-40 border-b border-l border-r border-neutral-200 cursor-pointer relative">
+          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/angular.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>
 
-          <div className="tech-tile flex justify-center items-center p-8 border-b border-l border-neutral-200 cursor-pointer relative">
+          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/supabase.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>
         </div>
 
         {/* ROW 2 */}
-        <div className="grid grid-cols:2 md:grid-cols-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7">
           <div className="tech-tile flex justify-center items-center p-16 border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/tailwind.svg" className="w-20 h-20 object-contain relative z-10" />
           </div>

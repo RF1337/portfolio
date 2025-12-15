@@ -108,11 +108,12 @@ body {
 }
 
 #card-3 .card-inner {
-  background-color: #84fab0;
+  background-color: #FEFEFE;
 }
 
 #card-4 .card-inner {
-  background-color: #fccb90;
+  background-color: #1F1E1F;
+  color: white;
 }
 
 #highlight {

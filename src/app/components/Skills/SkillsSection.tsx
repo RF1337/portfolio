@@ -26,7 +26,7 @@ const Card = ({ title, copy, index }: CardProps) => {
           <p className="text-white my-16 text-4xl font-playfair max-w-[550px]">{copy}</p>
         </div>
         <div className="card-img">
-          <img src={`/assets/card-${index + 1}.jpeg`} alt={title} />
+          <img src={`/assets/card-${index + 1}.webp`} alt={title} />
         </div>
       </div>
     </div>

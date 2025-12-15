@@ -22,7 +22,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer id="footer" className="flex flex-col bg-[#151515] text-[#ffffff] my-8 rounded-2xl m-8 mt-24 h-[60vh] md:h-[94vh]">
+        <footer id="footer" className="flex flex-col bg-[#151515] text-[#ffffff] my-8 rounded-2xl m-2 sm:m-4 md:m-8 mt-24 h-[60vh] md:h-[94vh]">
             {/* Desktop Layout */}
             <div className="hidden md:flex justify-between items-center p-8">
                 <p className="text-4xl flex-1 text-left font-extrabold">Ringsted, Denmark</p>
@@ -44,7 +44,7 @@ export default function Footer() {
                     <span className="font-extrabold text-blue-600 font-playfair italic">together</span>
                 </h2>
                 <a href="mailto:rasmusferst@gmail.com">
-                    <button className="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors">
+                    <button className="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors flex justify-center items-center mx-auto">
                         Send me a message
                     </button>
                 </a>

@@ -54,7 +54,7 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section id="work" className="px-8">
+    <section id="work" className="px-2 sm:px-4 md:px-8">
       <h1 className="text-[clamp(32px,5vw,96px)] md:mb-4 leading-tight">Work</h1>
 
       <div className="projects flex flex-col md:gap-12">

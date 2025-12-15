@@ -109,7 +109,7 @@ export default function Home() {
         <section className="intro">
         </section>
 
-          <h1 className="title px-8 mt-24 mb-8 text-[clamp(32px,5vw,96px)]">
+          <h1 className="title px-2 sm:px-4 md:px-8 mt-24 mb-8 text-[clamp(32px,5vw,96px)]">
             Skills
           </h1>
         <section className="cards">

@@ -38,7 +38,7 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <section id="about" className="mt-24 px-8">
+        <section id="about" className="mt-24 px-2 sm:px-4 md:px-8">
             <h2 className="text-xl md:text-4xl font-bold mb-4">(About Rasmus)</h2>
 
             <p

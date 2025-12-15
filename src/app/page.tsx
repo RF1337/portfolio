@@ -47,7 +47,7 @@ ScrollTrigger.scrollerProxy(document.body, {
     // Background color animation when footer comes into view
     gsap.to("body", {
       backgroundColor: "#ffffff",  // light mode
-      color: "#121212",
+      color: "#1B1D1D",
       ease: "none",
       scrollTrigger: {
         trigger: "#skills",

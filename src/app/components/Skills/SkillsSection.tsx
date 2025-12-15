@@ -22,8 +22,8 @@ const Card = ({ title, copy, index }: CardProps) => {
     <div className="card" id={`card-${index + 1}`}>
       <div className="card-inner">
         <div className="card-content">
-          <h1 className="text-[clamp(32px,5vw,80px)] font-bold">{title}</h1>
-          <p className="my-16 text-4xl font-playfair max-w-[550px]">{copy}</p>
+          <h1 className="text-white text-[clamp(32px,5vw,80px)] font-bold">{title}</h1>
+          <p className="text-white my-16 text-4xl font-playfair max-w-[550px]">{copy}</p>
         </div>
         <div className="card-img">
           <img src={`/assets/card-${index + 1}.jpeg`} alt={title} />
@@ -105,11 +105,7 @@ export default function Home() {
 
   return (
     <ReactLenis root>
-      <div className="app" ref={container}>
-        <section className="hero">
-          <img src="./assets/hero.jpeg" alt="" />
-        </section>
-
+      <div id="skills" ref={container}>
         <section className="intro">
         </section>
 

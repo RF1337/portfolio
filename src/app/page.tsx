@@ -50,7 +50,7 @@ ScrollTrigger.scrollerProxy(document.body, {
       color: "#121212",
       ease: "none",
       scrollTrigger: {
-        trigger: "#tech-stack",
+        trigger: "#skills",
         start: "top 20%",          // when footer starts to become visible
         end: () => document.body.scrollHeight, // ends at bottom of page
         toggleActions: "play reverse play reverse",

@@ -1,41 +1,43 @@
+// components/AnimatedText.tsx
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { SplitText as GSTSplitText } from "gsap/dist/SplitText";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-interface AnimatedTextProps {
+gsap.registerPlugin(ScrollTrigger);
+
+type Props = {
   text: string;
-  duration?: number;
-  y?: number;
-  delay?: number;
+  type?: "chars" | "words" | "lines";
   className?: string;
-}
+  stagger?: number;
+};
 
-export default function AnimatedText({
-  text,
-  duration = 1,
-  y = 20,
-  delay = 0.05,
-  className = "",
-}: AnimatedTextProps) {
-
-  const el = useRef<HTMLSpanElement>(null);
+export default function AnimatedText({ text, type = "chars", className, stagger = 0.05 }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!el.current) return;
+    if (!ref.current) return;
 
-    gsap.from(el.current, {
+    const split = new GSTSplitText(ref.current, { type });
+
+    gsap.from(split[type], {
+      y: 50,
       opacity: 0,
-      y,
-      duration,
-      delay,
+      stagger,
+      duration: 0.8,
       ease: "power3.out",
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 80%", // when the top of the element is 80% from the top of the viewport
+        toggleActions: "play none none none", // play only
+      },
     });
-  }, []);
 
-  return (
-    <span ref={el} className={className}>
-      {text}
-    </span>
-  );
+    return () => split.revert(); // cleanup
+  }, [text, type, stagger]);
+
+  return <div ref={ref} className={className}>{text}</div>;
 }

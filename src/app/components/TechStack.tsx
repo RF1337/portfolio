@@ -61,51 +61,51 @@ export default function TechStack() {
 
         {/* ROW 1 */}
         <div className="grid grid-cols-2 md:grid-cols-3">
-          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-r border-neutral-200 cursor-pointer">
+          <a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-r border-neutral-200 cursor-pointer">
             <img
               src="/assets/skills/react-native.svg"
               className="w-20 h-20 object-contain relative z-10"
             />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/angular.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-neutral-200 cursor-pointer relative">
+          <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center md:p-40 p-16 border-b border-l border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/supabase.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
         </div>
 
         {/* ROW 2 */}
         <div className="grid grid-cols-2 md:grid-cols-7">
-          <div className="tech-tile flex justify-center items-center p-16 border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/tailwind.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/typescript.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/docker.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/figma.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/csharp.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
           
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-r border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/github.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
 
-          <div className="tech-tile flex justify-center items-center p-16 border-l border-t border-neutral-200 cursor-pointer relative">
+          <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="tech-tile flex justify-center items-center p-16 border-l border-t border-neutral-200 cursor-pointer relative">
             <img src="/assets/skills/nextjs.svg" className="w-20 h-20 object-contain relative z-10" />
-          </div>
+          </a>
         </div>
       </div>
     </section>

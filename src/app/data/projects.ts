@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     title: "Vordingborg Bycentrum | Booth Reservation",
     year: "2024",
-    slug: "bycentrum-booking",
+    slug: "booking-bycentrum",
     link: "https://booking.bycentrum.dk/",
     imgSrc: "/assets/projects/booking-project.webp",
     tech: ["Angular", "JSON", "Figma", "UI", "UX"],

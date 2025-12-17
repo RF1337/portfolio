@@ -7,6 +7,7 @@ import Footer from "./components/shared/Footer";
 import MenuButton from "./components/menu/menuButton";
 import MenuOverlay from "./components/menu/menuOverlay";
 import HeaderWrapper from "./components/HeaderWrapper";
+import { Providers } from "./providers/providers";
 
 
 
@@ -25,10 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${roboto.variable} ${geistMono.variable} ${playfair.variable} antialiased`}>
         {/* Pass toggleMenu to Header so MenuButton can toggle */}
-        <HeaderWrapper>{children}</HeaderWrapper>
-
-
-        <Footer />
+        <Providers>
+          <HeaderWrapper>{children}</HeaderWrapper>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="project-card overflow-hidden">
       <Link
-        href={project.link ?? `/work/${project.slug}`}
+        href={`/work/${project.slug}`}
         className="block overflow-hidden rounded-sm"
       >
         <img

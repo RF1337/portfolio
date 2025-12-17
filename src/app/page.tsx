@@ -5,8 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis, useLenis } from "lenis/react";
 import WorkSection from "./components/sections/Work";
-import Header from "./components/shared/Header";
-import Footer from "./components/shared/Footer";
 import AboutSection from "./components/sections/About";
 import SkillsSection from "./components/sections/Skills";
 import HeroSection from "./components/sections/Hero";
@@ -62,7 +60,6 @@ ScrollTrigger.scrollerProxy(document.body, {
 
   return (
     <div>
-      <ReactLenis root />
       <HeroSection />
       <WorkSection />
       <AboutSection />

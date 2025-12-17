@@ -1,17 +1,9 @@
-import React from 'react';
+export default function WorkLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="min-h-screen flex flex-col">
 
-const WorkLayout: React.FC = ({ children }) => {
-    return (
-        <div className="work-layout">
-            <header>
-                <h1>My Work</h1>
-            </header>
-            <main>{children}</main>
-            <footer>
-                <p>&copy; {new Date().getFullYear()} My Portfolio</p>
-            </footer>
-        </div>
-    );
-};
+      <main className="flex-1">{children}</main>
 
-export default WorkLayout;
+    </div>
+  )
+}

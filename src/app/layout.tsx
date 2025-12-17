@@ -8,6 +8,7 @@ import MenuButton from "./components/menu/menuButton";
 import MenuOverlay from "./components/menu/menuOverlay";
 import HeaderWrapper from "./components/HeaderWrapper";
 import { Providers } from "./providers/providers";
+import PageTransition from "./components/PageTransition";
 
 
 
@@ -27,7 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${roboto.variable} ${geistMono.variable} ${playfair.variable} antialiased`}>
         {/* Pass toggleMenu to Header so MenuButton can toggle */}
         <Providers>
-          <HeaderWrapper>{children}</HeaderWrapper>
+          <HeaderWrapper>
+            <PageTransition>{children}</PageTransition>
+          </HeaderWrapper>
           <Footer />
         </Providers>
       </body>

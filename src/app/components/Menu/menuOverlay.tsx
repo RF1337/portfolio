@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import styles from "./menuOverlay.module.css";
-import Header from "@/app/shared/Header";
+import Header from "@/app/components/shared/Header";
 
 interface MenuOverlayProps {
   isOpen: boolean;

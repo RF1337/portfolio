@@ -1,4 +1,4 @@
-import SplitText from "./AnimatedText";
+import SplitText from "../AnimatedText";
 
 export default function HeroSection() {
   return (

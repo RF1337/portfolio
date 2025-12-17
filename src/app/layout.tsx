@@ -2,10 +2,10 @@
 import type { Metadata } from "next";
 import { Playfair, Roboto, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./shared/Header";
-import Footer from "./shared/Footer";
-import MenuButton from "./components/Menu/menuButton";
-import MenuOverlay from "./components/Menu/menuOverlay";
+import Header from "./components/shared/Header";
+import Footer from "./components/shared/Footer";
+import MenuButton from "./components/menu/menuButton";
+import MenuOverlay from "./components/menu/menuOverlay";
 import HeaderWrapper from "./components/HeaderWrapper";
 
 

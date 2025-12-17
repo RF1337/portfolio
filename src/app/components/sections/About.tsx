@@ -1,5 +1,5 @@
 "use client";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../AnimatedText";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -25,18 +25,6 @@ body {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 kolonner */
-  gap: 24px;
-}
-
-@media (max-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr; /* 1 kolonne på mobil */
-  }
-}
-
 .tech-ticker {
   position: relative;
   width: 100%;
@@ -84,7 +72,7 @@ body {
   aspect-ratio: 16/9;
   border-radius: 0.75em;
   overflow: hidden;
-    width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }

@@ -2,9 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import ScrambleTitle from "./ScrambleTitle";
 
-export default function TechStack() {
+export default function TechStackSection() {
   const gridRef = useRef<HTMLDivElement>(null);
   const highlightRef = useRef<HTMLDivElement>(null);
 

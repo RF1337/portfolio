@@ -1,5 +1,5 @@
 'use client';
-import MenuButton from '../components/Menu/menuButton';
+import MenuButton from '../menu/menuButton';
 
 interface HeaderProps {
   toggleMenu: () => void;

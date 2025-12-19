@@ -14,6 +14,7 @@ export default function TechStackSection() {
 
     const tiles = grid.querySelectorAll<HTMLAnchorElement>(".tech-tile");
 
+    // Initialize highlight box
     tiles.forEach((tile) => {
       tile.addEventListener("mouseenter", () => {
         const rect = tile.getBoundingClientRect();
